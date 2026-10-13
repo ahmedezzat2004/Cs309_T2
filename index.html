@@ -3,30 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Habbda ever - Home</title>
+    <title>My Website - Home</title>
     <link rel="stylesheet" href="css/Stylesheet.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
         <h1>My Blog</h1>
-        <nav>
-            <a href="index.html">Home</a>
+        <nav aria-label="Main navigation">
+            <a href="index.html" aria-current="page">Home</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
         <section>
             <h2>Latest Posts</h2>
-            <article>
-                <h3>Learning HTML</h3>
-                <p>HTML is the foundation of every website.</p>
-            </article>
+            <div class="post-grid">
+                <article>
+                    <h3>Learning HTML</h3>
+                    <p>HTML is the foundation of every website.</p>
+                </article>
 
-            <article>
-                <h3>Why CSS Matters</h3>
-                <p>CSS makes pages look great.</p>
-            </article>
+                <article>
+                    <h3>Why CSS Matters</h3>
+                    <p>CSS makes pages look great.</p>
+                </article>
+
+                <article>
+                    <h3>Building Accessible Forms</h3>
+                    <p>Clear labels and thoughtful controls help everyone use the web.</p>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
